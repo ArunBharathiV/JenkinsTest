@@ -18,7 +18,7 @@ public class JenkinsFormRegister extends BaseClass{
 	@When("User enters all the valid informations to register {string},{string} and {string}")
 	public void userEntersAllTheValidInformationsToRegisterAnd(String string, String string2, String string3) {
 		 driver.findElement(By.id("username")).sendKeys(string);
-		 driver.findElement(By.id("email")).sendKeys("string2");
+		 driver.findElement(By.id("email")).sendKeys(string2);
 		 driver.findElement(By.id("password")).sendKeys(string3);
 		 driver.findElement(By.id("confirmPassword")).sendKeys(string3);
 	}
@@ -35,8 +35,6 @@ public class JenkinsFormRegister extends BaseClass{
 				 
 		 String regSuccMsg = driver.findElement(By.xpath("//h2[text()='Registration Successful']")).getText();
 		 Assert.assertEquals("Verify reg succ msg", string, regSuccMsg);
-		 driver.findElement(By.id("username")).sendKeys("ArunBar");
-		 driver.findElement(By.id("username")).sendKeys("ArunBar");
 		
 	}
 
