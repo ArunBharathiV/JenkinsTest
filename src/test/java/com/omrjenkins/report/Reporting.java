@@ -11,7 +11,7 @@ public class Reporting {
 	
 public static void generateJvmReport(String jsonFile) {
 		
-		File file = new File("C:\\Users\\anith\\eclipse-workspace\\OMRBranchHotelAutomation\\target");
+		File file = new File("C:\\Users\\anith\\Desktop\\JenkFolder\\JenkinsTest\\target");
 		
 		Configuration config = new Configuration(file, "Jenkins test Proj");
 		
